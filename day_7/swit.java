@@ -27,8 +27,6 @@ class swit {
 
             default:
                 System.out.println("it's consonant");
-
-
         }
 
     }
