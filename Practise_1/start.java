@@ -47,18 +47,95 @@ public class start {
         }
     }
 
+    static void largest(int n1,int n2)
+    {
+        if(n1>n2)
+        {
+            System.out.println(n1+" is largest");
+        }
+        else
+        {
+            System.out.println(n2+" is largest");
+        }
+    }
+
+    static int currency(int r)
+    {
+        return r/64;
+    }
+
+    static void fibonacci(int f)
+    {
+        int n1=0;
+        int n2=1;
+        System.out.println(n1+" "+n2);
+        for(int i=1;i<=f;i++)
+        {
+            int t=n1+n2;
+            System.out.print(" "+t);
+            n1=n2;
+            n2=t;
+        }
+    }
+
+    static void palindrome(String p)
+    {
+        int k=0;
+        String b=p;
+        for(int i=0;i<p.length()-1;i++)
+        {
+            for(int j=b.length()-1;j>=0;j--)
+            {
+                if(p.charAt(i)==b.charAt(j))
+                {
+                    k++;
+                }
+                
+            }
+        }
+
+        if(k==p.length())
+        {
+            System.out.println("Palindrome");
+        }
+        else
+        {
+            System.out.println("not palindrome");
+        }
+    }
+
+    static void armstrong(int a1)
+    {
+        int b=a1;
+        int t=0;
+
+        while(b>0)
+        {
+            b=b/10;
+            t=b*b*b;
+            System.out.println(t);
+        }
+       // System.out.println(t);
+    }
+
     public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Practise questino Ans 💖😎");
 
-        System.out.println("Enter your choise of operation 😮😁");
+        System.out.println("Enter your choise of operation ");
 
         System.out.println("1.print whether a number is even or odd, also take input from the user.");
         System.out.println("2. Take name as input and print a greeting message for that particular name.");
         System.out.println("3. program to input principal, time, and rate (P, T, R) from the user and find Simple Interest");
         System.out.println("4. Take in two numbers and an operator (+, -, *, /) and calculate the value.");
+        System.out.println("5. Take 2 numbers as input and print the largest number.");
+        System.out.println("6. Input currency in rupees and output in USD.");
+        System.out.println("7. To calculate Fibonacci Series up to n numbers.");
+        System.out.println("8. To find out whether the given String is Palindrome or not.");
+
+
 
         int m=sc.nextInt();
         
@@ -97,26 +174,51 @@ public class start {
                 calculater(n1,n2,s);
                 break;
 
+            case 5:
+                // 5. Take 2 numbers as input and print the largest number.
+                System.out.println("5. Take 2 numbers as input and print the largest number.");
+                int l1=sc.nextInt();
+                int l2=sc.nextInt();
+                largest(l1,l2);
+                break;
+
+            case 6:
+                // 6. Input currency in rupees and output in USD.
+                System.out.println("6. Input currency in rupees and output in USD.");
+                System.out.println("Enter Rs.");
+                int rs=sc.nextInt();
+                System.out.println("USD is ");
+                System.out.println(currency(rs));
+                break;
+
+            case 7:
+                // 7. To calculate Fibonacci Series up to n numbers.
+                System.out.println("7. To calculate Fibonacci Series up to n numbers.");
+                System.out.println("Enter number");
+                int f=sc.nextInt();
+                fibonacci(f);
+                break;
+            
+            case 8:
+                // 8. To find out whether the given String is Palindrome or not.
+                System.out.println("8. To find out whether the given String is Palindrome or not.");
+                System.out.println("Enter string");
+                String pal=sc.next();
+                palindrome(pal);
+                break;
+
+            case 9:
+                // 9. To find Armstrong Number between two given number.
+                System.out.println("9. To find Armstrong Number");
+                int a1=sc.nextInt();
+                armstrong(a1);
+                break;
+
             default:
-                System.out.println("you enter wrong choice 😒🤦‍♀️🤦‍♀️");
+                System.out.println("you enter wrong choice ");
                 break;
         }
     
-
-        
-
-        
-        
-        
-
-       
-
-// 5. Take 2 numbers as input and print the largest number.
-// 6. Input currency in rupees and output in USD.
-// 7. To calculate Fibonacci Series up to n numbers.
-// 8. To find out whether the given String is Palindrome or not.
-// 9. To find Armstrong Number between two given number.
-
     }
     
 }
