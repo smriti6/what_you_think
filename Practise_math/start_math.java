@@ -4,7 +4,8 @@ public class start_math {
     static Scanner sc=new Scanner(System.in);
     public static void main(String[] args) {
        // count();
-       palindrome();
+       //palindrome();
+       prime();
 
     }   
 
@@ -44,5 +45,29 @@ public class start_math {
         {
             System.out.println("not");
         }
+    }
+
+    static void prime()
+    {
+        System.out.println("Prime number");
+        System.out.println("Enter number");
+        int n=sc.nextInt();
+        int t=0;
+        int m=n/2;
+        for(int i=2;i<m;i++)
+        {
+            if(n%i==0)
+            {
+                System.out.println("Not prime");
+                t++;
+                break;
+            }
+        }
+
+        if(t==0)
+        {
+            System.out.println("prime");
+        }
+        
     }
 }
