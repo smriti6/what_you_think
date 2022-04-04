@@ -5,7 +5,9 @@ public class start_math {
     public static void main(String[] args) {
        // count();
        //palindrome();
-       prime();
+       //prime();
+       int n[]={-1,-2,-3,-4,3,2,1};
+       System.out.println(arraySign(n));
 
     }   
 
@@ -70,4 +72,71 @@ public class start_math {
         }
         
     }
+
+    public static int arraySign(int[] nums) {
+        //         int t=1;
+        //         int a=0;
+        //         int s=0;
+        //         int q=0;
+        //         Arrays.sort(nums);
+        //         int res = Arrays.binarySearch(nums, 0);
+        //         boolean test = res > 0 ? true : false;
+        //         if(test==true)
+        //         {
+        //             return 0;
+        //         }
+        //         else
+        //         {
+        //             for(int i=0;i<nums.length;i++)
+        //             {
+        //                     t*=nums[i];
+        //                     if(nums[i]<0)
+        //                     {
+        //                         a++;
+        //                     }
+        //             }
+        //         }
+        //         if(a%2==0 )
+        //         {
+        //            q=1;
+        //         }  
+        //         if(a%2 !=0 ){
+        //             q=-1;
+        //         }
+        //         return q;
+                //int n=0,p=0,z=0;
+                int t=1;
+                for(int i=0;i<nums.length;i++)
+                {
+        //             if(nums[i]<0)
+        //                 n++;
+        //             if(nums[i]>=1)
+        //                 p++;
+        //             if(nums[i]==0)
+        //                 z++;
+                    
+                    //method 2
+                    // int c=t*nums[i];
+                    // if(c==0)
+                    //     return 0;
+                    // if(c>0)
+                    //     t=1;
+                    // else
+                    //     t=-1;
+                    
+                    if(nums[i]==0) {
+                        return 0;
+                    }else if(nums[i]<0) {
+                        t = -t;
+                }
+                }
+                // if(z>0)
+                //     return 0;
+                // else if(n%2!=0)
+                //     return -1;
+                // else
+                //     return 1;
+                return t;
+                
+            }
 }
