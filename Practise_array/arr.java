@@ -26,24 +26,24 @@ public class arr {
        //day2
        //leetcode
        //1672. Richest Customer Wealth
-       int [][] accounts={{1,2,3},{3,2,1}};
-        int t[]=new int [accounts.length];
-        for(int i=0;i<accounts.length;i++)
-        {
-            for(int j=0;j<accounts[i].length;j++)
-            {
-                int x=accounts[i][j];
-                //t+=x;
-                t[i]=t[i]+x;
-            }
-        }
-        // for(int z=0;z<4;z++)
-        //     {
-        //         System.out.println(t[z]);
-        //     }
-        Arrays.sort(t);
-        //return t[accounts.length-1];
-        System.out.println(t[t.length-1]);
+    //    int [][] accounts={{1,2,3},{3,2,1}};
+    //     int t[]=new int [accounts.length];
+    //     for(int i=0;i<accounts.length;i++)
+    //     {
+    //         for(int j=0;j<accounts[i].length;j++)
+    //         {
+    //             int x=accounts[i][j];
+    //             //t+=x;
+    //             t[i]=t[i]+x;
+    //         }
+    //     }
+    //     // for(int z=0;z<4;z++)
+    //     //     {
+    //     //         System.out.println(t[z]);
+    //     //     }
+    //     Arrays.sort(t);
+    //     //return t[accounts.length-1];
+    //     System.out.println(t[t.length-1]);
         
         //method 2
         // 
@@ -61,6 +61,49 @@ public class arr {
         //         m=t;
         // }
         // System.out.println(m);
-        
+
+
+        //1572. Matrix Diagonal Sum
+        int [][] nums={{1,2,3},{4,5,6},{7,8,9}};
+
+        //method 1 only print i:
+        // int sum=0;
+        // for(int i=0;i<nums.length;i++)
+        // {
+        //     for(int j=0;j<nums[i].length;j++)
+        //     {
+        //         if(i==j)
+        //         {
+        //             System.out.print(nums[i][j]);
+        //         }
+        //         else
+        //         {
+        //             System.out.print(" ");
+        //         }
+        //     }
+        // }
+
+        //method 2: print mid term 2 time 
+
+        // for(int i=0;i<nums.length;i++)
+        // {
+        //     System.out.print(nums[i][i]+" ");
+        //     System.out.print(nums[i][nums.length-i-1]+" ");
+        // }
+
+        for(int i=0;i<nums.length;i++)
+        {
+            for(int j=0;j<nums.length;j++)
+            {
+                if(i==j || i+j==nums.length-1)
+                // sum+=nums[i][j];
+                System.out.print(nums[i][j]);
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    
     }
 }

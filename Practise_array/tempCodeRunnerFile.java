@@ -1,15 +1,14 @@
- // int [][] accounts={{1,2,3},{3,2,1}};
-        // int t=0;
-        // int m=0;
-        // int n=accounts.length;
-        // for(int i=0;i<n;i++)
-        // {
-        //     t=0;
-        //     for(int j=0;j<accounts[i].length;j++)
-        //     {
-        //         t+=accounts[i][j];
-        //     }
-        //     if(t>m)
-        //         m=t;
-        // }
-        // System.out.println(m);
+ for(int i=0;i<nums.length;i++)
+            {
+                for(int j=0;j<nums.length;j++)
+                {
+                    if(i==j || i+j==nums.length-1)
+                    // sum+=nums[i][j];
+                    System.out.print(nums[i][j]);
+                    else{
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            }
+        
