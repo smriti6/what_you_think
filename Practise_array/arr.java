@@ -91,19 +91,26 @@ public class arr {
         //     System.out.print(nums[i][nums.length-i-1]+" ");
         // }
 
-        for(int i=0;i<nums.length;i++)
-        {
-            for(int j=0;j<nums.length;j++)
-            {
-                if(i==j || i+j==nums.length-1)
-                // sum+=nums[i][j];
-                System.out.print(nums[i][j]);
-                else{
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
-        }
+        // for(int i=0;i<nums.length;i++)
+        // {
+        //     for(int j=0;j<nums.length;j++)
+        //     {
+        //         if(i==j || i+j==nums.length-1)
+        //         // sum+=nums[i][j];
+        //         System.out.print(nums[i][j]);
+        //         else{
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println();
+        // }
+
+        //1678. Goal Parser Interpretation
+        String c="G()(al)";
+        c=c.replace("()","o");
+        c=c.replace("(al)","al");
+        // return c;
+        System.out.println(c);
     
     }
 }
