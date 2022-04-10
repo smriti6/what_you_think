@@ -64,7 +64,7 @@ public class arr {
 
 
         //1572. Matrix Diagonal Sum
-        int [][] nums={{1,2,3},{4,5,6},{7,8,9}};
+        //int [][] nums={{1,2,3},{4,5,6},{7,8,9}};
 
         //method 1 only print i:
         // int sum=0;
@@ -106,11 +106,31 @@ public class arr {
         // }
 
         //1678. Goal Parser Interpretation
-        String c="G()(al)";
-        c=c.replace("()","o");
-        c=c.replace("(al)","al");
-        // return c;
-        System.out.println(c);
+        // String c="G()(al)";
+        // c=c.replace("()","o");
+        // c=c.replace("(al)","al");
+        // // return c;
+        // System.out.println(c);
     
+
+        //1. Two Sum
+        
+        int [] nums ={2,7,11,15};
+        int target =9;
+        int []t={0,0};
+        
+        for(int i=0;i<nums.length;i++)
+        {
+            for(int j=i+1;j<nums.length;j++)
+            {
+                if(nums[i]+nums[j]==target)
+                {
+                    t[0]=i;
+                    t[1]=j;
+                    //break;
+                }
+            }
+        }
+        System.out.println(t[0]+" "+t[1]);
     }
 }
