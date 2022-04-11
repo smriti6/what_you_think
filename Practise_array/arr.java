@@ -115,22 +115,31 @@ public class arr {
 
         //1. Two Sum
         
-        int [] nums ={2,7,11,15};
-        int target =9;
-        int []t={0,0};
+        // int [] nums ={2,7,11,15};
+        // int target =9;
+        // int []t={0,0};
         
-        for(int i=0;i<nums.length;i++)
-        {
-            for(int j=i+1;j<nums.length;j++)
-            {
-                if(nums[i]+nums[j]==target)
-                {
-                    t[0]=i;
-                    t[1]=j;
-                    //break;
-                }
-            }
-        }
-        System.out.println(t[0]+" "+t[1]);
+        // for(int i=0;i<nums.length;i++)
+        // {
+        //     for(int j=i+1;j<nums.length;j++)
+        //     {
+        //         if(nums[i]+nums[j]==target)
+        //         {
+        //             t[0]=i;
+        //             t[1]=j;
+        //             //break;
+        //         }
+        //     }
+        // }
+        // System.out.println(t[0]+" "+t[1]);
+
+
+        //66. Plus One
+        
+        int [] digits={1,2,3};
+        int t=digits[digits.length-1];
+        t+=1;
+        digits[digits.length-1]=t;
+        System.out.println(digits[2]);
     }
 }
