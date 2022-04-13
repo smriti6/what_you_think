@@ -136,10 +136,10 @@ public class arr {
 
         //66. Plus One
         
-        int [] digits={1,2,3};
-        int t=digits[digits.length-1];
-        t+=1;
-        digits[digits.length-1]=t;
-        System.out.println(digits[2]);
+        // int [] digits={1,2,3};
+        // int t=digits[digits.length-1];
+        // t+=1;
+        // digits[digits.length-1]=t;
+        // System.out.println(digits[2]);
     }
 }
