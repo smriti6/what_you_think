@@ -1,0 +1,10 @@
+//Array list 
+//Declaration 
+
+ArrayList <Integer> list = new ArrayList <> () ;
+
+List. add(24) ;
+List. add(21) ;
+List. add(30) ;
+
+System.out.println(list) ;
