@@ -1,0 +1,28 @@
+Class twopoint {
+    Public static void main(String args []) 
+    {
+       int arr []= {1,5,6,8,2};
+       
+       reverse(arr);
+    }
+    Public void reverse()
+    {
+        int s=arr[0];
+        int e=arr.length-1;
+        
+         while(s<=e)
+         {
+             swap(s,e);
+             s++;
+             e--;
+         }
+    }
+
+    Public void swap(arr, s, e) 
+    {
+       int t= s;
+       s=e;
+       e=t;
+       System.out.println(arr[s]+""+arr[e]);
+    }
+}
