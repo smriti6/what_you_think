@@ -1,0 +1,6 @@
+Arrays.sort(sal);
+int t=0,n=0;
+for(int i=1;i<sal.length-1;i++)
+t+=sal[i];
+n++;
+return t/n;
