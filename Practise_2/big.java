@@ -1,4 +1,4 @@
-class big {
+public class big {
    public static void main(String args []) 
    {
       int [] t= new int [5];
@@ -19,7 +19,7 @@ class big {
 
      for(int i=0;i<arr.length;i++) 
      {
-        System.out.println(arr[i]);
+        System.out.println(t[i]);
      }
    }
 }
