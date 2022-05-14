@@ -7,6 +7,8 @@ class test {
         {
             System.out.println(name);
         }
+        int n=1234567898;
+        System.out.println(n);
         
 
 
@@ -14,11 +16,11 @@ class test {
 
     
     
-    int a[]={1,3,5};
-    for(int b:a)
-    {
-        System.out.print(++b);
-    }
+    // int a[]={1,3,5};
+    // for(int b:a)
+    // {
+    //     System.out.print(++b);
+    // }
 
     // int a=3;
     // int b=a<<2;
