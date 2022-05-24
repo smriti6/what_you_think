@@ -1,5 +1,3 @@
-import javax.lang.model.util.ElementScanner14;
-
 public class tes {
     public static void main(String[] args) {
         boolean a=false;
