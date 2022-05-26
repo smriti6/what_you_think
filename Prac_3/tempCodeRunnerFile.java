@@ -1,4 +1,1 @@
-else if(!a)
-        // {
-        //     System.out.println("-1");
-        // }
+System.out.println(i);
