@@ -24,6 +24,7 @@ public class staticDemo {
         System.out.println("Inside the MAIN Method...");
         staticDemo sd = new staticDemo();
         sd.m1();                                // Non-static
+        m1();
         m2();                                    // No problem
     }
 
