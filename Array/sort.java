@@ -45,7 +45,6 @@ public class sort {
         }
 
     }
-    // 2. Write a Java program to sum values of an array. 
     // 3. Write a Java program to print the following grid. 
     // 4. Write a Java program to calculate the average value of array elements
 }
