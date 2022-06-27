@@ -14,7 +14,6 @@ public class grid {
         // - - - - - - - - - -                                                                                           
         // - - - - - - - - - -                                                                                           
         // - - - - - - - - - -  
-
         System.out.println("Enter size of grid");
         int n=sc.nextInt();
         for(int i=0;i<n;i++){
