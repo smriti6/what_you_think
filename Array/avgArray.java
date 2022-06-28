@@ -8,5 +8,6 @@ public class avgArray {
         }
         int avg=t/arr.length;
         System.out.println("Average value = "+avg);
+        System.out.println("Done");
     }
 }
